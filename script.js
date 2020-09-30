@@ -17,7 +17,7 @@ setInterval(function(){
     }
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
-    var characterTop= parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var cTop = -(500-characterTop);
     if((characterTop>480)||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+130)))){
         alert("Try again. Score: "+counter);
